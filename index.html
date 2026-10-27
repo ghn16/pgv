@@ -185,7 +185,7 @@
       </ul>
     </div>
     <p class="font-serif text-xl md:text-2xl text-ink mb-6">Dans 7 jours, tu auras une phrase claire à dire à la personne concernée, et un rituel de 5 minutes pour faire le point.</p>
-    <p class="mb-4 font-serif font-bold text-5xl text-clay">5 000 FCFA</p>
+    <p id="paiement" class="mb-4 font-serif font-bold text-5xl text-clay scroll-mt-6">5 000 FCFA</p>
     <!-- Chariow Widget -->
     <div id="chariow-widget" data-product-id="prd_g0xjzple"
         data-store-domain="lumoraafrica.site"
@@ -268,7 +268,7 @@
 })();
 </script>
 <script>
-  document.querySelectorAll('[data-pay]').forEach(function (a) { a.href = '#offre'; });
+  document.querySelectorAll('[data-pay]').forEach(function (a) { a.href = '#paiement'; });
   document.querySelectorAll('[data-contact]').forEach(function (n) { n.textContent = window.CONTACT; });
   document.getElementById('y').textContent = new Date().getFullYear();
 </script>
