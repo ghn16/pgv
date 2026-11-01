@@ -1,276 +1,290 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>En 7 jours, trouve les mots justes pour ce que tu ressens</title>
-<meta name="description" content="Un guide pratique PDF + audios guidés pour étudiants et jeunes pros : reconnaître tes émotions, trouver des mots précis et les exprimer sans te juger.">
-<meta property="og:title" content="En 7 jours, trouve les mots justes pour ce que tu ressens">
-<meta property="og:description" content="Guide PDF de 9 chapitres + audios guidés pour trouver les mots justes pour ce que tu ressens.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/og.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], serif: ['Fraunces', 'Georgia', 'serif'] },
-        colors: {
-          ink: '#1f2a26',
-          sand: '#faf6ef',
-          clay: '#c8643c',
-          claydark: '#a94f2c',
-          sage: '#e4ece6',
-          sagedark: '#2f5d4e'
-        }
-      }
-    }
-  }
-</script>
-<style>
-  html { scroll-behavior: smooth; }
-  body { background: #faf6ef; color: #1f2a26; }
-  details > summary { list-style: none; cursor: pointer; }
-  details > summary::-webkit-details-marker { display: none; }
-  details[open] .chev { transform: rotate(180deg); }
-  .btn { display:inline-block; background:#c8643c; color:#fff; font-weight:600; padding:1rem 1.75rem; border-radius:9999px; text-align:center; transition:background .2s, transform .1s; }
-  .btn:hover { background:#a94f2c; }
-  .btn:active { transform: scale(.98); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>En 7 jours, trouve les mots justes pour ce que tu ressens</title>
+  <meta name="description" content="Un guide pratique de 7 jours, avec un PDF, 9 chapitres audio et 7 exercices guidés pour mieux reconnaître et exprimer tes émotions.">
+  <meta property="og:title" content="En 7 jours, trouve les mots justes pour ce que tu ressens">
+  <meta property="og:description" content="Un guide pratique, 9 chapitres audio et 7 exercices guidés, un par jour.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#faf6ef">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#1f2a26;--sand:#faf6ef;--paper:#fffefa;--clay:#c8643c;--clay-dark:#a94f2c;--sage:#e4ece6;--green:#2f5d4e;--green-deep:#123b31;--line:rgba(31,42,38,.12);--serif:'Fraunces',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:1rem}
+    body{margin:0;background:var(--sand);color:var(--ink);font:400 16px/1.65 var(--sans);padding-bottom:0}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    .shell{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+    .topline{background:var(--green-deep);color:#f7f3e9;font-size:.78rem;text-align:center;padding:.65rem 1rem;font-style:italic}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;gap:1rem}
+    .brand{display:flex;align-items:center;gap:.7rem;font-weight:700;letter-spacing:.02em;text-decoration:none}
+    .brand-mark{width:2.1rem;height:2.1rem;border:1px solid var(--clay);border-radius:50%;display:grid;place-items:center;color:var(--clay);font-family:var(--serif);font-size:1.2rem}
+    .nav-links{display:flex;gap:1.2rem;font-size:.86rem;color:#58615c}
+    .nav-links a{text-decoration:none}
+    .nav-links a:hover{color:var(--green)}
+    .hero{padding:2.8rem 0 4.6rem;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:clamp(2rem,6vw,5.5rem)}
+    .eyebrow{display:inline-flex;align-items:center;gap:.5rem;color:var(--green);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .eyebrow:before{content:'';width:1.7rem;height:2px;background:var(--clay)}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,.quote{font-family:var(--serif);letter-spacing:-.035em}
+    h1{font-size:clamp(2.45rem,5.5vw,4.55rem);line-height:1.04;margin:.95rem 0 1rem;max-width:13ch}
+    h1 em{font-style:normal;color:var(--green)}
+    .hero-copy{font-size:1.08rem;color:#525d56;max-width:38rem;margin-bottom:1.25rem}
+    .hero-note{font-size:.84rem;color:#68716b;margin:.85rem 0 0}
+    .price-chip{display:inline-flex;align-items:center;gap:.45rem;border:1px solid rgba(47,93,78,.18);background:rgba(228,236,230,.7);padding:.52rem .85rem;border-radius:999px;font-size:.9rem;font-weight:600;margin:0 0 1.15rem}
+    .price-chip strong{color:var(--clay-dark)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;background:var(--clay);color:white;text-decoration:none;font-weight:700;padding:.95rem 1.25rem;border-radius:999px;box-shadow:0 10px 24px rgba(168,79,44,.16);transition:transform .18s ease,background .18s ease,box-shadow .18s ease}
+    .btn:hover{background:var(--clay-dark);transform:translateY(-2px);box-shadow:0 14px 28px rgba(168,79,44,.2)}
+    .btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #daa98e;outline-offset:3px}
+    .btn-arrow{font-size:1.15em;line-height:1}
+    .hero-art{position:relative;isolation:isolate}
+    .hero-art:before{content:'';position:absolute;z-index:-1;inset:8% 3% 3% 12%;border-radius:48% 48% 2rem 2rem;background:linear-gradient(150deg,#e5e9dd,#ded1b4)}
+    .hero-book{height:auto;width:min(100%,400px);margin:auto;border-radius:1.1rem;filter:drop-shadow(0 26px 26px rgba(20,40,31,.2));transform:rotate(1.5deg)}
+    .stat-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.3rem}
+    .stat{background:rgba(255,254,250,.82);border:1px solid var(--line);border-radius:999px;padding:.38rem .72rem;font-size:.76rem;color:#4e5b53}
+    .stat strong{color:var(--green)}
+    .section{padding:5rem 0}
+    .section-white{background:var(--paper)}
+    .section-sage{background:var(--sage)}.section-clay{background:#f3e2d3}.section-gold{background:#f6eccf}.section-green{background:var(--green);color:#f4f1e6}.section-green h2{color:#fff}.section-green .eyebrow{color:#f1d9a0}.section-green .section-intro{color:#d9e5dc}.section-green .step{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18)}.section-green .step strong{color:#fff}.section-green .step span{color:#d3e0d6}.section-green .step-num{background:#e6b562;color:#17382e}.section-offer{background:var(--green-deep);padding:4.5rem 0}.pay-card{margin:1.5rem auto 0;max-width:600px;background:#fff;border-radius:1.2rem;padding:1rem;box-shadow:0 18px 40px rgba(0,0,0,.25)}.result{background:rgba(255,255,255,.08);border:1px solid rgba(238,201,126,.35);border-radius:1rem;padding:1rem 1.1rem;margin:0 auto 1.4rem;max-width:520px;font-family:var(--serif);font-size:1.12rem;line-height:1.4;color:#fff}.result strong{color:#f1c780}.situation-tag{color:var(--clay-dark)}.situation{border-color:rgba(200,100,60,.18)}.day{border-top:3px solid #e6b562}.day-last{background:#fff8ea}.days{grid-template-columns:repeat(4,1fr)}.day:nth-child(7){grid-column:span 1}
+    .section-head{max-width:690px;margin-bottom:2.2rem}
+    .section-head.center{text-align:center;margin-inline:auto}
+    h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;margin:.55rem 0 .8rem}
+    .section-intro{color:#59635d;font-size:1.02rem;max-width:620px;margin-bottom:0}
+    .situations{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+    .situation{overflow:hidden;border:1px solid var(--line);background:#fff;border-radius:1.15rem;box-shadow:0 8px 28px rgba(31,42,38,.04)}
+    .situation img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:#e8e8df}
+    .situation-body{padding:1.2rem 1.2rem 1.35rem}
+    .situation-tag{font-size:.73rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--clay-dark);margin-bottom:.4rem}
+    h3{font-size:1.08rem;line-height:1.35;margin-bottom:.35rem}
+    .situation p{font-size:.92rem;color:#59635d;margin:0}
+    .soft-callout{margin:1.5rem auto 0;max-width:800px;text-align:center;color:#4c5951;font-family:var(--serif);font-size:clamp(1.15rem,2.4vw,1.55rem)}
+    .soft-callout strong{color:var(--green)}
+    .approach{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+    .author-note{background:var(--paper);border-radius:1.2rem;padding:1.5rem;border:1px solid rgba(47,93,78,.14);box-shadow:0 12px 30px rgba(31,42,38,.05)}
+    .author-note .small-label{font-size:.74rem;color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+    .quote{font-size:1.45rem;line-height:1.35;color:var(--green-deep);margin:1rem 0}
+    .author-note p:last-child{font-size:.9rem;color:#5c665f;margin-bottom:0}
+    .steps{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;margin-top:1.4rem}
+    .step{display:flex;gap:.8rem;padding:1rem;background:rgba(255,254,250,.72);border:1px solid rgba(47,93,78,.12);border-radius:.95rem}
+    .step-num{flex:0 0 2rem;height:2rem;border-radius:50%;background:var(--green);color:white;display:grid;place-items:center;font-weight:700;font-size:.84rem}
+    .step strong{display:block;font-size:.92rem;margin:.03rem 0 .15rem}
+    .step span{display:block;color:#647068;font-size:.8rem;line-height:1.45}
+    .days{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+    .day{background:#fff;border:1px solid var(--line);border-radius:1rem;padding:1.1rem;min-height:142px}
+    .day:nth-child(5),.day:nth-child(6),.day:nth-child(7){background:#fffefa}
+    .day-kicker{display:flex;align-items:center;justify-content:space-between;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:.65rem}
+    .day-kicker span{font-family:var(--serif);font-size:1.35rem;line-height:1;color:var(--clay)}
+    .day p{font-size:.86rem;color:#5e6962;margin:0;line-height:1.5}
+    .day-last{border-color:rgba(200,100,60,.35)}
+    .day-last .day-kicker{color:var(--clay-dark)}
+    .package{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:clamp(2rem,6vw,5rem)}
+    .package-art{background:linear-gradient(145deg,#f1e8d8,#dfe8df);border-radius:1.5rem;padding:1.4rem;overflow:hidden}
+    .package-art img{width:min(100%,300px);height:auto;margin:auto;border-radius:.85rem;box-shadow:0 16px 35px rgba(31,42,38,.16)}
+    .includes{display:grid;gap:.75rem;margin:1.5rem 0}
+    .include{display:flex;gap:.9rem;align-items:flex-start;padding:.9rem 1rem;background:rgba(255,255,255,.7);border-radius:.9rem;border:1px solid rgba(47,93,78,.12)}
+    .include-mark{display:grid;place-items:center;flex:0 0 2rem;height:2rem;border-radius:.65rem;background:var(--green);color:white;font-weight:700}
+    .include strong{display:block;margin:.03rem 0 .12rem}
+    .include span{display:block;color:#606b63;font-size:.86rem}
+    .audio-total{display:inline-block;color:var(--green-deep);font-weight:700;background:#fff;border-radius:999px;padding:.48rem .8rem;font-size:.88rem}
+    .preview{display:grid;grid-template-columns:1.05fr .95fr;gap:1rem;align-items:stretch;margin-top:2rem}
+    .preview-figure,.audio-sample{background:#fff;border:1px solid var(--line);border-radius:1rem;padding:1rem;margin:0}
+    .preview-figure img{width:100%;border-radius:.65rem}
+    figcaption{font-size:.78rem;color:#67716a;margin:.65rem .1rem 0}
+    .audio-sample{display:flex;flex-direction:column;justify-content:center}
+    .audio-sample .small-label{font-size:.72rem;color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+    .audio-sample h3{font-family:var(--serif);font-size:1.4rem;margin:.45rem 0}
+    .audio-sample p{font-size:.9rem;color:#606b63}
+    audio{width:100%;height:44px;margin-top:.4rem}
+    .offer{max-width:760px;margin:auto;color:#f8f6ee;border-radius:1.5rem;padding:clamp(1.5rem,5vw,3.2rem);text-align:center;position:relative;overflow:hidden}
+    .offer:before,.offer:after{content:'';position:absolute;border:1px solid rgba(238,201,126,.28);border-radius:50%;width:240px;height:240px;pointer-events:none}
+    .offer:before{top:-150px;left:-100px}.offer:after{right:-130px;bottom:-170px}
+    .offer-inner{position:relative;z-index:1}
+    .offer .eyebrow{color:#e9d8ad;justify-content:center}
+    .offer h2{max-width:580px;margin:.8rem auto;font-size:clamp(2rem,4vw,3rem)}
+    .offer-copy{color:#d6e1d8;max-width:520px;margin:0 auto 1.35rem}
+    .offer-price{font-family:var(--serif);font-size:clamp(2.8rem,7vw,4rem);line-height:1;color:#f1c780;margin:.5rem 0 .25rem}
+    .offer-sub{color:#d6e1d8;font-size:.85rem;margin-bottom:1.2rem}
+    .offer .btn{background:#e6b562;color:#17382e;box-shadow:none}
+    .offer .btn:hover{background:#f1c780}
+    .offer-small{font-size:.75rem;color:#c7d3ca;margin:.9rem 0 0}
+    .faq-wrap{max-width:780px;margin:auto}
+    .faq{display:grid;gap:.65rem}
+    details{background:#fff;border:1px solid var(--line);border-radius:.9rem;padding:1rem 1.1rem}
+    summary{cursor:pointer;list-style:none;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:'+';font-size:1.3rem;line-height:1;color:var(--green);font-weight:400}
+    details[open] summary:after{content:'−'}
+    details p{color:#5d6861;font-size:.9rem;margin:.75rem 0 .1rem}
+    .disclaimer{background:#fff;padding:1rem 1.1rem;border-radius:.9rem;margin:1rem 0 0;font-size:.84rem;color:#4e5a52}
+    footer{padding:2.2rem 0 6rem;color:#717a73;font-size:.78rem;text-align:center}
+    .mobile-cta{display:none}
+    @media(max-width:850px){.hero{gap:2rem}.situations{gap:.7rem}.situation-body{padding:1rem}.days{grid-template-columns:repeat(3,1fr)}.approach{gap:2rem}}
+    @media(max-width:640px){body{padding-bottom:76px}.shell{width:min(100% - 32px,560px)}.topline{font-size:.68rem}.nav{padding:.8rem 0}.nav-links{display:none}.hero{padding:1.8rem 0 3.1rem;grid-template-columns:1fr;gap:1.4rem}.hero-art{grid-row:1}.hero-book{width:min(74%,330px)}.hero-art:before{inset:6% 12% 2%}.hero-text{text-align:center}.hero-text h1{margin-inline:auto;font-size:clamp(2.4rem,12vw,3.5rem)}.hero-copy{font-size:1rem;margin-inline:auto}.hero-text .eyebrow{justify-content:center}.hero-text .price-chip{margin-inline:auto}.hero-text .btn{width:100%;max-width:380px}.hero-note{font-size:.78rem}.stat-row{justify-content:center}.section{padding:3.5rem 0}.section-head{margin-bottom:1.5rem}.section-head.center{text-align:left}.situations{grid-template-columns:1fr;gap:.8rem}.situation{display:grid;grid-template-columns:38% 1fr;align-items:stretch}.situation img{height:100%;min-height:145px;aspect-ratio:auto}.situation-body{padding:.9rem}.situation-tag{font-size:.65rem}.situation h3{font-size:.98rem}.situation p{font-size:.82rem}.soft-callout{text-align:left}.approach,.package{grid-template-columns:1fr;gap:1.3rem}.author-note{padding:1.15rem}.steps{gap:.55rem}.step{padding:.8rem;gap:.55rem}.step span{font-size:.74rem}.days{grid-template-columns:repeat(2,1fr);gap:.55rem}.day{padding:.85rem;min-height:130px}.day p{font-size:.8rem}.package-art{padding:1rem}.package-art img{width:min(75%,320px)}.preview{grid-template-columns:1fr;gap:.75rem}.preview-figure,.audio-sample{padding:.85rem}.offer{border-radius:1.1rem}.offer .btn{width:100%}.mobile-cta{display:flex;position:fixed;z-index:20;inset:auto 0 0;align-items:center;justify-content:space-between;gap:.65rem;padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(250,246,239,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line)}.mobile-price{font-weight:700;font-size:.84rem;line-height:1.2}.mobile-price span{display:block;color:#68716b;font-size:.68rem;font-weight:500}.mobile-cta .btn{padding:.72rem 1rem;font-size:.84rem;white-space:nowrap;box-shadow:none}footer{padding-bottom:1.5rem}}
+    @media(max-width:380px){.shell{width:calc(100% - 26px)}.situation{grid-template-columns:35% 1fr}.days{grid-template-columns:1fr}.day{min-height:auto}.mobile-cta{padding-inline:.65rem}.mobile-cta .btn{padding-inline:.75rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
 </head>
-<body class="font-sans antialiased text-[17px] leading-relaxed pb-24 md:pb-0">
+<body>
+  <div class="topline">« Je réponds “ça va” alors qu’au fond, quelque chose me pèse. »</div>
+  <div class="shell">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="#haut" aria-label="Lumora — retour en haut"><span class="brand-mark" aria-hidden="true">L</span><span>Lumora</span></a>
+      <div class="nav-links"><a href="#parcours">Le parcours</a><a href="#contenu">Ce qui est inclus</a><a href="#offre">Le prix</a></div>
+    </nav>
+  </div>
 
-<!-- PHRASE D'ACCROCHE : le problème, avec les mots du client -->
-<div class="bg-sage text-sagedark text-center font-serif text-base md:text-lg px-5 py-3">
-  « Je réponds “ça va” alors qu’au fond, quelque chose me pèse, et je ne sais pas par où commencer. »
-</div>
-
-<!-- ====== CONFIG : à modifier avant publication ====== -->
-<script>
-  // Email ou WhatsApp pour la garantie / le support
-  window.CONTACT = "[contact]";     // ex: "contact@tondomaine.com"
-</script>
-
-<!-- 1-2. HERO -->
-<header class="px-5 pt-10 pb-16 md:pt-20 md:pb-24">
-  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-    <div class="text-center md:text-left">
-      <p class="inline-block bg-sage text-sagedark text-sm font-medium px-4 py-1.5 rounded-full mb-6">Guide PDF + exercices audio guidés</p>
-      <h1 class="font-serif font-bold text-[2rem] leading-tight md:text-[2.75rem] md:leading-[1.1]">
-        Étudiant ou jeune pro : en 7 jours, trouve les mots justes pour ce que tu ressens.
-      </h1>
-      <p class="mt-3 text-sm font-medium text-clay">5 000 FCFA, paiement unique</p>
-      <p class="mt-4 text-lg text-ink/75">
-        Un petit exercice par jour, de 5 à 15 minutes, pour passer de « ça va » à une phrase claire que tu peux vraiment dire à un camarade, un collègue ou un proche. Guide PDF et audios inclus.
-      </p>
-      <div class="mt-9">
-        <a href="#" data-pay class="btn text-lg">Payer maintenant</a>
-        <p class="mt-3 text-sm text-ink/60">Accès immédiat au guide et aux audios</p>
+  <main id="haut">
+    <header class="shell hero">
+      <div class="hero-text">
+        <span class="eyebrow">Guide pratique · PDF + audio</span>
+        <h1>En 7 jours, trouve les mots justes pour <em>ce que tu ressens.</em></h1>
+        <p class="hero-copy">Reconnais ce que tu ressens, puis prépare une phrase simple pour le dire.</p>
+        <p class="price-chip"><strong>5 000 FCFA</strong> · paiement unique</p>
+        <div><a class="btn" href="#chariow-widget">Payer maintenant <span class="btn-arrow" aria-hidden="true">→</span></a></div>
+                <div class="stat-row" aria-label="Contenu du guide"><span class="stat"><strong>7 jours</strong> de pratique</span><span class="stat"><strong>9</strong> chapitres à écouter</span><span class="stat"><strong>7</strong> exercices guidés</span><span class="stat">Téléchargement <strong>immédiat</strong></span></div>
       </div>
-    </div>
-    <div class="order-first md:order-last">
-      <img src="images/mockup-guide.jpg" alt="Le guide « En 7 jours, trouve les mots justes pour ce que tu ressens » en version livre" width="900" height="1350" fetchpriority="high" class="mx-auto w-56 sm:w-72 md:w-full max-w-sm rounded-2xl shadow-2xl">
-    </div>
-  </div>
-</header>
+      <div class="hero-art"><img class="hero-book" src="images/mockup-guide.jpg" alt="Mockup du guide En 7 jours, trouve les mots justes pour ce que tu ressens" width="900" height="1350" fetchpriority="high"></div>
+    </header>
 
-<!-- 3. PROBLÈME -->
-<section class="px-5 py-16 bg-white">
-  <div class="max-w-2xl mx-auto">
-    <h2 class="font-serif font-bold text-2xl md:text-3xl mb-6">Tu te reconnais ?</h2>
-    <div class="space-y-4 text-ink/85">
-      <p>Tu réponds « ça va » alors qu’au fond, quelque chose te pèse.</p>
-      <p>Quand quelqu’un te demande ce qu’il y a, tu ne sais pas par où commencer.</p>
-      <p>Après une discussion difficile, tu repasses la scène dans ta tête, tu rédiges un message puis tu l’effaces.</p>
-      <p>Au campus, au travail ou avec un proche, tu as parfois du mal à demander du soutien ou à poser une limite.</p>
-      <p class="font-medium text-ink">Et ensuite, tu te demandes pourquoi tu n’as pas réussi à dire ce que tu ressentais.</p>
-    </div>
-  </div>
-</section>
+    <section class="section section-clay" aria-labelledby="reconnais">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow">Ça t’arrive aussi ?</span>
+          <h2 id="reconnais">Les mots restent parfois bloqués.</h2>
+          
+        </div>
+        <div class="situations">
+          <article class="situation">
+            <img src="images/situation-message-efface.webp" alt="Une étudiante réfléchit à un message avant de l’envoyer sur son téléphone" width="1600" height="1200" loading="lazy">
+            <div class="situation-body"><p class="situation-tag">Avec un proche</p><h3>Tu écris… puis tu effaces.</h3><p>Tu veux expliquer ce qui t’a blessé, mais tu n’arrives pas à trouver la bonne phrase.</p></div>
+          </article>
+          <article class="situation">
+            <img src="images/situation-campus-silence.webp" alt="Un étudiant hésite à prendre la parole lors d’une discussion avec ses camarades au campus" width="1600" height="1200" loading="lazy">
+            <div class="situation-body"><p class="situation-tag">Au campus</p><h3>Tu gardes ta pensée pour toi.</h3><p>Quand on te demande ton avis, tu as du mal à commencer à parler de ce que tu ressens.</p></div>
+          </article>
+          <article class="situation">
+            <img src="images/situation-travail-echange.webp" alt="Une jeune professionnelle cherche ses mots pendant un échange au bureau" width="1600" height="1200" loading="lazy">
+            <div class="situation-body"><p class="situation-tag">Au travail</p><h3>Tu veux dire les choses sans attaquer.</h3><p>Tu aimerais poser une limite ou faire une demande clairement, sans te taire.</p></div>
+          </article>
+        </div>
+        <p class="soft-callout">Tu n’as pas à tout raconter d’un coup. <strong>Une phrase simple peut être un premier pas.</strong></p>
+      </div>
+    </section>
 
-<!-- 4. AGITATION -->
-<section class="px-5 py-16">
-  <div class="max-w-2xl mx-auto">
-    <h2 class="font-serif font-bold text-2xl md:text-3xl mb-6">Ce qui arrive quand rien ne change</h2>
-    <div class="space-y-4 text-ink/85">
-      <p>Parfois, une seule conversation te revient en tête toute la soirée. Tu te promets d’en reparler demain, puis une semaine passe.</p>
-      <p>Si rien ne change, dans six mois tu pourrais encore éviter les mêmes sujets ou répondre « ça va » sans réussir à expliquer ce qui te pèse. Les malentendus peuvent alors se répéter, et les autres ne peuvent pas deviner le soutien ou la clarification dont tu as besoin.</p>
-      <p>C’est comme porter un sac trop lourd sans jamais le poser : tu continues d’avancer, mais cela te fatigue.</p>
-    </div>
-    <p class="mt-8 border-l-4 border-clay pl-5 font-serif text-xl">Tu n’as pas à tout raconter d’un coup ; tu peux commencer par une phrase simple.</p>
-  </div>
-</section>
+    <section class="section section-green" aria-labelledby="methode">
+      <div class="shell approach">
+        <div class="author-note">
+          <span class="small-label">Une démarche simple</span>
+          <p class="quote" style="color:var(--green-deep)">« Je n’ai pas aimé ça. La prochaine fois, s’il te plaît, explique-moi la raison. »</p>
+          <p>Avant, je restais souvent silencieux. J’ai commencé par identifier ce qui me dérangeait, puis à le dire simplement. Le guide t’aide à faire ce chemin.</p>
+        </div>
+        <div>
+          <span class="eyebrow">Pas besoin de phrase parfaite</span>
+          <h2 id="methode">Tu peux commencer par quatre petits gestes.</h2>
+                    <div class="steps">
+            <div class="step"><span class="step-num">1</span><div><strong>Observer</strong><span>Ce qui se passe dans ton corps et dans ta tête.</span></div></div>
+            <div class="step"><span class="step-num">2</span><div><strong>Nommer</strong><span>Choisir un mot plus précis que « ça va ».</span></div></div>
+            <div class="step"><span class="step-num">3</span><div><strong>Faire le point</strong><span>Séparer les faits, tes pensées et ton émotion.</span></div></div>
+            <div class="step"><span class="step-num">4</span><div><strong>Exprimer</strong><span>Préparer une phrase claire et une demande simple.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- 5. PRÉSENTATION -->
-<section class="px-5 py-16 bg-sage">
-  <div class="max-w-2xl mx-auto">
-    <p class="text-sagedark font-semibold text-sm uppercase tracking-wide mb-2">Voici le guide qui t’accompagne pas à pas</p>
-    <h2 class="font-serif font-bold text-2xl md:text-3xl mb-6">En 7 jours, trouve les mots justes pour ce que tu ressens</h2>
-    <p class="mb-4">Un guide numérique pratique, accompagné de ses audios. Il t’aide à observer tes émotions, à trouver des mots plus précis et à préparer une façon claire de les exprimer.</p>
-    <p class="mb-4">Cette approche vient aussi de mon expérience. Avant, je restais souvent silencieux parce que j’avais du mal à exprimer ce que je ressentais vraiment. J’ai commencé par identifier ce qui m’avait dérangé, puis à l’exprimer simplement :</p>
-    <blockquote class="bg-white rounded-2xl p-5 my-6 font-serif text-lg border border-sagedark/10">
-      « Je n’ai pas aimé ça. La prochaine fois, s’il te plaît, explique-moi la raison. »
-    </blockquote>
-    <p class="mb-4">Pas besoin de trouver une phrase parfaite pour faire un premier pas.</p>
-    <p>Le guide propose des exercices à pratiquer dans ta vie quotidienne, au campus, au travail ou avec tes proches. Il ne remplace pas un accompagnement professionnel ; il t’offre des repères pour mieux comprendre et exprimer ton vécu.</p>
-  </div>
-</section>
+    <section class="section section-gold" id="parcours" aria-labelledby="jours">
+      <div class="shell">
+        <div class="section-head center">
+          <span class="eyebrow">Le parcours en bref</span>
+          <h2 id="jours">Sept jours, un petit pas après l’autre.</h2>
+          <p class="section-intro">Un exercice guidé par jour, d’une à une minute et demie. Tu peux reprendre à ton rythme.</p>
+        </div>
+        <div class="days">
+          <article class="day"><div class="day-kicker"><span>01</span> Jour 1</div><p>Observer ton corps, tes pensées, tes envies.</p></article>
+          <article class="day"><div class="day-kicker"><span>02</span> Jour 2</div><p>Séparer situation, pensée, émotion, réaction.</p></article>
+          <article class="day"><div class="day-kicker"><span>03</span> Jour 3</div><p>Trouver le mot juste et mesurer l’intensité.</p></article>
+          <article class="day"><div class="day-kicker"><span>04</span> Jour 4</div><p>Repérer le déclencheur, le besoin, une action.</p></article>
+          <article class="day"><div class="day-kicker"><span>05</span> Jour 5</div><p>Écrire ta note émotionnelle en 5 éléments.</p></article>
+          <article class="day"><div class="day-kicker"><span>06</span> Jour 6</div><p>Préparer ta phrase claire.</p></article>
+          <article class="day day-last"><div class="day-kicker"><span>07</span> Jour 7</div><p>T’entraîner à la dire et faire le bilan.</p></article>
+        </div>
+      </div>
+    </section>
 
-<!-- 7. EXPÉRIENCE PERSONNELLE -->
-<section class="px-5 py-16 bg-white">
-  <div class="max-w-2xl mx-auto text-center">
-    <h2 class="font-serif font-bold text-2xl md:text-3xl mb-6">Pourquoi j’ai écrit ce guide</h2>
-    <p class="text-lg text-ink/85">
-      J’ai transformé cette démarche en exercices courts, un par jour. Tu n’as pas à la deviner seul : tu la suis pas à pas.
-    </p>
-  </div>
-</section>
+    <section class="section section-white" id="contenu" aria-labelledby="pack-title">
+      <div class="shell">
+        <div class="package">
+          <div class="package-art"><img src="images/couverture-guide.jpg" alt="Couverture du guide pratique En 7 jours, trouve les mots justes pour ce que tu ressens" width="700" height="933" loading="lazy"></div>
+          <div>
+            <span class="eyebrow">Tout est réuni dans le pack</span>
+            <h2 id="pack-title">Lis, écoute et pratique.</h2>
+            
+            <div class="includes">
+              <div class="include"><span class="include-mark" aria-hidden="true">PDF</span><div><strong>Le guide en 9 chapitres</strong><span>Pour reconnaître et exprimer tes émotions.</span></div></div>
+              <div class="include"><span class="include-mark" aria-hidden="true">9</span><div><strong>Les 9 chapitres en audio</strong><span>Pour écouter le guide à ton rythme.</span></div></div>
+              <div class="include"><span class="include-mark" aria-hidden="true">7</span><div><strong>7 exercices audio guidés</strong><span>Un pour chaque jour du parcours.</span></div></div>
+            </div>
+            <span class="audio-total">16 audios au total</span>
+          </div>
+        </div>
+        <div class="preview" aria-label="Aperçu du guide et extrait audio">
+          <figure class="preview-figure"><img src="images/apercu-chapitre-3.jpg" alt="Extrait réel du chapitre 3 sur la différence entre situation, pensée, émotion et réaction, avec un exemple au campus" width="1000" height="487" loading="lazy"><figcaption>Un extrait réel du chapitre 3 : faits, pensées, émotions et réactions.</figcaption></figure>
+          <div class="audio-sample"><span class="small-label">Écoute un extrait réel</span><h3>L’exercice guidé du jour 3</h3><p>Un aperçu des exercices audio.</p><audio controls preload="none" src="audio/extrait-jour-3.mp3">Ton navigateur ne peut pas lire cet audio.</audio></div>
+        </div>
+      </div>
+    </section>
 
-<!-- 6. CONTENU -->
-<section class="px-5 py-16">
-  <div class="max-w-3xl mx-auto">
-    <h2 class="font-serif font-bold text-2xl md:text-3xl mb-2 text-center">Ce que tu vas recevoir concrètement</h2>
-    <p class="text-center text-ink/60 mb-10">Un guide PDF de 9 chapitres, les 9 chapitres à écouter et 7 exercices guidés, un pour chaque jour.</p>
+    <section class="section-offer" id="offre" aria-labelledby="offre-title">
+      <div class="shell">
+        <div class="offer">
+          <div class="offer-inner">
+            <span class="eyebrow">Le pack complet</span>
+            <h2 id="offre-title">Commence par mettre un mot sur ce que tu ressens.</h2>
+            <p class="result">Dans 7 jours, tu auras <strong>une phrase claire à dire</strong> et <strong>un rituel de 5 minutes</strong> pour faire le point.</p>
+            <p class="offer-price">5 000 <span style="font-size:.48em">FCFA</span></p>
+            <p class="offer-sub">Paiement unique · téléchargement automatique après paiement</p>
+            <a class="btn" href="#chariow-widget">Payer maintenant <span class="btn-arrow" aria-hidden="true">→</span></a>
+            
+          </div>
+        </div>
+        <div class="pay-card" aria-label="Formulaire de paiement">
+          <div id="chariow-widget" style="scroll-margin-top:24px" data-product-id="prd_g0xjzple" data-store-domain="lumoraafrica.site" data-style="frame" data-border-style="rounded" data-cta-width="xs" data-cta-animation="none" data-locale="fr" data-primary-color="#2f5d4e" data-background-color="#FFFFFF"></div>
+        </div>
+      </div>
+    </section>
 
-    <h3 class="font-semibold text-lg mb-4">Le guide PDF — 9 chapitres</h3>
-    <ol class="space-y-3 mb-12">
-      <li class="flex gap-4 bg-white rounded-xl p-4"><span class="font-serif font-bold text-clay text-xl w-6 shrink-0">1</span><p><strong>Ton parcours pratique de 7 jours</strong> — savoir comment avancer et quoi pratiquer chaque jour.</p></li>
-      <li class="flex gap-4 bg-white rounded-xl p-4"><span class="font-serif font-bold text-clay text-xl w-6 shrink-0">2</span><p><strong>Repérer les premiers signes</strong> — observer les signaux du corps, les pensées et les envies d’agir.</p></li>
-      <li class="flex gap-4 bg-white rounded-xl p-4"><span class="font-serif font-bold text-clay text-xl w-6 shrink-0">3</span><p><strong>Distinguer émotion, pensée et réaction</strong> — séparer les faits de tes interprétations et de ce que tu ressens.</p></li>
-      <li class="flex gap-4 bg-white rounded-xl p-4"><span class="font-serif font-bold text-clay text-xl w-6 shrink-0">4</span><p><strong>Trouver des mots plus précis</strong> — aller au-delà de « ça va » ou « je suis énervé ».</p></li>
-      <li class="flex gap-4 bg-white rounded-xl p-4"><span class="font-serif font-bold text-clay text-xl w-6 shrink-0">5</span><p><strong>Comprendre les déclencheurs et les besoins</strong> — repérer ce qui a compté dans une situation et ce qui pourrait t’aider.</p></li>
-      <li class="flex gap-4 bg-white rounded-xl p-4"><span class="font-serif font-bold text-clay text-xl w-6 shrink-0">6</span><p><strong>Tenir un journal des émotions</strong> — faire le point en quelques minutes avec une note simple.</p></li>
-      <li class="flex gap-4 bg-white rounded-xl p-4"><span class="font-serif font-bold text-clay text-xl w-6 shrink-0">7</span><p><strong>Dire ce que tu ressens sans attaquer</strong> — préparer une phrase claire avec un fait, une émotion et une demande.</p></li>
-      <li class="flex gap-4 bg-white rounded-xl p-4"><span class="font-serif font-bold text-clay text-xl w-6 shrink-0">8</span><p><strong>Adapter ta façon d’en parler</strong> — trouver une manière appropriée avec un proche, au campus, en famille ou au travail.</p></li>
-      <li class="flex gap-4 bg-white rounded-xl p-4"><span class="font-serif font-bold text-clay text-xl w-6 shrink-0">9</span><p><strong>Garder le réflexe et mesurer tes progrès</strong> — créer un petit rituel et savoir quand chercher du soutien.</p></li>
-    </ol>
+    <section class="section section-sage" aria-labelledby="faq-title">
+      <div class="shell faq-wrap">
+        <div class="section-head center"><span class="eyebrow">Avant de commencer</span><h2 id="faq-title">Questions fréquentes</h2></div>
+        <div class="faq">
+          <details><summary>À qui s’adresse ce guide ?</summary><p>Il a été pensé surtout pour les jeunes adultes francophones, étudiants ou jeunes professionnels. D’autres adultes qui souhaitent mieux exprimer ce qu’ils ressentent peuvent aussi s’en servir.</p></details>
+          <details><summary>Faut-il savoir bien écrire ?</summary><p>Non. Tu peux commencer par noter quelques mots dans un cahier ou dans ton téléphone. L’objectif est d’avancer simplement, sans chercher la phrase parfaite.</p></details>
+          <details><summary>Dois-je suivre le parcours sept jours de suite ?</summary><p>Le guide propose un exercice par jour. Si tu rates une journée, ce n’est pas un échec : reprends quand tu peux ou refais l’exercice qui t’est utile.</p></details>
+          <details><summary>Qu’est-ce qui est inclus ?</summary><p>Le guide PDF en 9 chapitres, les 9 chapitres en audio et 7 exercices guidés, un pour chaque jour : 16 pistes audio au total.</p></details>
+          <details><summary>Comment je reçois les fichiers ?</summary><p>Juste après le paiement, les fichiers (PDF et audios) sont disponibles au téléchargement automatiquement. Tu n’as rien à attendre.</p></details>
+          <details><summary>J’ai un souci ou une question avant d’acheter ?</summary><p>Écris-nous sur <a href="https://wa.me/message/JKHVIKVRTJSME1" target="_blank" rel="noopener" style="color:var(--green);font-weight:600">WhatsApp</a>, on te répond directement.</p></details>
+          <details><summary>Est-ce que ce guide remplace un professionnel ?</summary><p>Non. C’est un support éducatif et pratique, pas un soin. Si ta détresse persiste, perturbe fortement ta vie ou si tu te sens en danger, cherche l’aide d’une personne de confiance ou d’un professionnel.</p></details>
+        </div>
+        <p class="disclaimer">Ce guide est un support éducatif. Il ne remplace pas un accompagnement professionnel.</p>
+      </div>
+    </section>
+  </main>
 
-    <h3 class="font-semibold text-lg mb-4">Le parcours pratique — 7 jours</h3>
-    <ul class="space-y-3 mb-12">
-      <li class="flex gap-4"><span class="shrink-0 bg-sagedark text-white text-sm font-semibold rounded-full px-3 py-1 h-fit">Jour 1</span><span>Observer les signaux du corps, une pensée et une envie d’agir.</span></li>
-      <li class="flex gap-4"><span class="shrink-0 bg-sagedark text-white text-sm font-semibold rounded-full px-3 py-1 h-fit">Jour 2</span><span>Distinguer la situation, la pensée, l’émotion et la réaction.</span></li>
-      <li class="flex gap-4"><span class="shrink-0 bg-sagedark text-white text-sm font-semibold rounded-full px-3 py-1 h-fit">Jour 3</span><span>Choisir un mot plus précis et noter l’intensité du ressenti.</span></li>
-      <li class="flex gap-4"><span class="shrink-0 bg-sagedark text-white text-sm font-semibold rounded-full px-3 py-1 h-fit">Jour 4</span><span>Repérer le déclencheur, le besoin et une action possible.</span></li>
-      <li class="flex gap-4"><span class="shrink-0 bg-sagedark text-white text-sm font-semibold rounded-full px-3 py-1 h-fit">Jour 5</span><span>Rédiger une note émotionnelle en cinq éléments.</span></li>
-      <li class="flex gap-4"><span class="shrink-0 bg-sagedark text-white text-sm font-semibold rounded-full px-3 py-1 h-fit">Jour 6</span><span>Préparer une phrase claire pour exprimer ton ressenti.</span></li>
-      <li class="flex gap-4"><span class="shrink-0 bg-sagedark text-white text-sm font-semibold rounded-full px-3 py-1 h-fit">Jour 7</span><span>S’entraîner à dire la phrase et faire le bilan des progrès.</span></li>
-    </ul>
+  <footer><div class="shell">© <span id="year"></span> Lumora · Un guide pratique pour avancer à ton rythme. · <a href="https://wa.me/message/JKHVIKVRTJSME1" target="_blank" rel="noopener">Contact WhatsApp</a></div></footer>
+  <div class="mobile-cta"><div class="mobile-price">Guide + 16 audios<span>Paiement unique</span></div><a class="btn" href="#chariow-widget">Payer maintenant <span aria-hidden="true">→</span></a></div>
 
-    <h3 class="font-semibold text-lg mb-3">Les audios inclus</h3>
-    <p>Tu reçois <strong>les 9 chapitres à écouter</strong> et <strong>7 exercices guidés</strong> d’environ une minute et demie chacun, un pour chaque jour du parcours. Tu peux lire ou écouter et avancer à ton rythme.</p>
-  </div>
-</section>
-
-<!-- 8. PRIX -->
-<section id="offre" class="px-5 py-16">
-  <div class="max-w-xl mx-auto bg-white rounded-3xl shadow-sm border border-ink/10 p-8 md:p-10 text-center">
-    <img src="images/couverture-guide.jpg" alt="Couverture du guide « En 7 jours, trouve les mots justes pour ce que tu ressens »" width="700" height="933" loading="lazy" class="mx-auto w-40 rounded-lg shadow-lg mb-8">
-    <h2 class="font-serif font-bold text-2xl md:text-3xl mb-6">Tout ce qui est inclus</h2>
-    <ul class="text-left space-y-3 mb-8">
-      <li class="flex gap-3"><span class="text-sagedark font-bold">✓</span>Le guide PDF en 9 chapitres</li>
-      <li class="flex gap-3"><span class="text-sagedark font-bold">✓</span>Les 9 chapitres à écouter en audio</li>
-      <li class="flex gap-3"><span class="text-sagedark font-bold">✓</span>7 exercices guidés d’environ 1 minute 30, un pour chaque jour</li>
-    </ul>
-    <p class="text-ink/70 mb-2">Le pack comprend 16 audios : les 9 chapitres à écouter et 7 exercices guidés, un pour chaque jour du parcours.</p>
-    <div class="my-8 text-left bg-sage rounded-2xl p-5">
-      <p class="font-semibold text-sagedark mb-3">Dans 7 jours, tu sauras :</p>
-      <ul class="space-y-2">
-        <li class="flex gap-3"><span class="text-sagedark font-bold">→</span>mettre un mot précis sur ce que tu ressens, au lieu de dire « ça va » ;</li>
-        <li class="flex gap-3"><span class="text-sagedark font-bold">→</span>séparer ce qui s’est passé, ce que tu en penses et ce que tu ressens ;</li>
-        <li class="flex gap-3"><span class="text-sagedark font-bold">→</span>dire une phrase claire à quelqu’un, sans l’attaquer et sans te taire.</li>
-      </ul>
-    </div>
-    <p class="font-serif text-xl md:text-2xl text-ink mb-6">Dans 7 jours, tu auras une phrase claire à dire et un rituel de 5 minutes pour faire le point.</p>
-    <p id="paiement" class="mb-4 font-serif font-bold text-4xl md:text-5xl text-clay scroll-mt-6">5 000 FCFA<span class="block md:inline text-xl md:text-2xl font-semibold text-ink/70">, paiement unique</span></p>
-    <!-- Chariow Widget : le texte de son bouton se règle dans Chariow, mets le même libellé : « Payer maintenant » -->
-    <div id="chariow-widget" data-product-id="prd_g0xjzple"
-        data-store-domain="lumoraafrica.site"
-        data-style="frame"
-        data-border-style="rounded"
-        data-cta-width="xs"
-        data-cta-animation="none"
-        data-locale="fr"
-        data-primary-color="#ffcc00"
-        data-background-color="#FFFFFF"></div>
-  </div>
-</section>
-
-<!-- 9. GARANTIE (à valider avant publication : supprime cette section si tu ne l'offres pas) -->
-<section id="garantie" class="px-5 py-12 bg-sage">
-  <div class="max-w-2xl mx-auto text-center">
-    <h2 class="font-serif font-bold text-2xl mb-4">Garantie remboursement 7 jours</h2>
-    <p>Tu as 7 jours après ton achat pour découvrir le guide et ses audios. Si le contenu ne te convient pas, écris-moi à <strong data-contact>[contact]</strong> dans ce délai pour demander un remboursement.</p>
-  </div>
-</section>
-
-<!-- 10. FAQ + CTA FINAL -->
-<section class="px-5 py-16">
-  <div class="max-w-2xl mx-auto">
-    <h2 class="font-serif font-bold text-2xl md:text-3xl mb-8 text-center">Questions fréquentes</h2>
-    <div class="space-y-3">
-      <details class="bg-white rounded-xl p-5">
-        <summary class="flex justify-between items-center gap-4 font-semibold">À qui s’adresse le guide ?<span class="chev transition-transform">⌄</span></summary>
-        <p class="mt-3 text-ink/80">Il vise surtout les jeunes adultes francophones, étudiants ou jeunes professionnels. Les exercices peuvent aussi être utiles à d’autres adultes qui souhaitent mieux exprimer ce qu’ils ressentent.</p>
-      </details>
-      <details class="bg-white rounded-xl p-5">
-        <summary class="flex justify-between items-center gap-4 font-semibold">Faut-il savoir bien écrire ?<span class="chev transition-transform">⌄</span></summary>
-        <p class="mt-3 text-ink/80">Non. Tu peux noter quelques mots dans un cahier ou dans ton téléphone. Le guide t’encourage à commencer simplement.</p>
-      </details>
-      <details class="bg-white rounded-xl p-5">
-        <summary class="flex justify-between items-center gap-4 font-semibold">Dois-je faire le parcours exactement en sept jours consécutifs ?<span class="chev transition-transform">⌄</span></summary>
-        <p class="mt-3 text-ink/80">Le parcours propose un exercice par jour. Si tu rates une journée, ce n’est pas un échec : reprends le jour suivant ou refais l’exercice qui te semble utile.</p>
-      </details>
-      <details class="bg-white rounded-xl p-5">
-        <summary class="flex justify-between items-center gap-4 font-semibold">Qu’est-ce que je reçois après l’achat ?<span class="chev transition-transform">⌄</span></summary>
-        <p class="mt-3 text-ink/80">Le pack comprend le guide PDF et 16 audios : les 9 chapitres à écouter et 7 exercices guidés, un pour chaque jour du parcours. <!-- À COMPLÉTER : canal exact d'accès et de livraison (email, page de téléchargement, WhatsApp...) --></p>
-      </details>
-      <details class="bg-white rounded-xl p-5">
-        <summary class="flex justify-between items-center gap-4 font-semibold">Est-ce que le guide garantit que mes relations vont s’améliorer ?<span class="chev transition-transform">⌄</span></summary>
-        <p class="mt-3 text-ink/80">Non. Il t’aide à pratiquer une communication plus claire, mais il ne contrôle pas la réaction des autres et ne garantit pas un résultat précis.</p>
-      </details>
-      <details class="bg-white rounded-xl p-5">
-        <summary class="flex justify-between items-center gap-4 font-semibold">Est-ce que le guide remplace un psychologue ou un professionnel de santé ?<span class="chev transition-transform">⌄</span></summary>
-        <p class="mt-3 text-ink/80">Non. C’est un support éducatif et pratique, pas un soin. Si ta détresse persiste, perturbe fortement ta vie ou si tu te sens en danger, cherche l’aide d’une personne de confiance ou d’un professionnel.</p>
-      </details>
-    </div>
-
-    <div class="mt-16 text-center">
-      <p class="font-serif text-xl md:text-2xl mb-6">Tu peux commencer par un petit pas : observer une émotion, trouver un mot plus juste, puis préparer une phrase. Avance à ton rythme, un jour après l’autre.</p>
-      <a href="#" data-pay class="btn text-lg">Payer maintenant</a>
-    </div>
-  </div>
-</section>
-
-<footer class="px-5 py-10 text-center text-sm text-ink/55 border-t border-ink/10">
-  <p>Ce guide est un support éducatif et ne remplace pas un accompagnement professionnel.</p>
-  <p class="mt-1">© <span id="y"></span> — Tous droits réservés.</p>
-</footer>
-
-<!-- CTA collant mobile -->
-<div class="md:hidden fixed bottom-0 inset-x-0 bg-sand/95 backdrop-blur border-t border-ink/10 p-3 z-50">
-  <a href="#" data-pay class="btn w-full !py-3.5">Payer maintenant</a>
-</div>
-
-<script>
-(function() {
-  var script = document.createElement('script');
-  script.src = 'https://js.chariowcdn.com/v1/widget.min.js';
-  script.async = true;
-  document.head.appendChild(script);
-  var link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = 'https://js.chariowcdn.com/v1/widget.min.css';
-  document.head.appendChild(link);
-})();
-</script>
-<script>
-  document.querySelectorAll('[data-pay]').forEach(function (a) { a.href = '#paiement'; });
-  document.querySelectorAll('[data-contact]').forEach(function (n) { n.textContent = window.CONTACT; });
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var css=document.createElement('link');css.rel='stylesheet';css.href='https://js.chariowcdn.com/v1/widget.min.css';document.head.appendChild(css);
+      var script=document.createElement('script');script.src='https://js.chariowcdn.com/v1/widget.min.js';script.async=true;document.head.appendChild(script);
+    })();
+  </script>
 </body>
 </html>
